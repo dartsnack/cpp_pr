@@ -14,3 +14,9 @@ target_include_directories(
     "src"
 )
 
+target_compile_features(
+    math
+    PRIVATE
+    cxx_std_17
+)
+

@@ -15,5 +15,11 @@ target_link_libraries(
     Catch2::Catch2WithMain
 )
 
+target_compile_features(
+    math_tests
+    PRIVATE
+    cxx_std_17
+)
+
 add_test(math_tests math_tests)
 

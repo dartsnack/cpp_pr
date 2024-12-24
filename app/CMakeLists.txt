@@ -12,3 +12,8 @@ target_link_libraries(
     math
 )
 
+target_compile_features(
+    app 
+    PRIVATE
+    cxx_std_17
+)
