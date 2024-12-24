@@ -22,7 +22,6 @@ namespace math
 	    return fib_cache[n];
 	}
 
-
 	return fib_cache[n] = fib(n-1) + fib(n-2);
     }
 }
