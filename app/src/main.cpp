@@ -1,13 +1,11 @@
 #include <iostream>
 
 #include <math/fib.hpp>
+#include <math/fact.hpp>
 
 int main()
 {
-    int32_t v1 = math::fib(46);
-    int32_t v2 = math::fib(47);
-
-    std::cout << v1 << '\n';
-    std::cout << (v2 == math::badfib) << '\n';
+    std::int32_t v = math::fact(10);
+    std::cout << v << '\n';
 }
 
