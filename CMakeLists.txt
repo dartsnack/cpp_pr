@@ -2,11 +2,10 @@ cmake_minimum_required(VERSION 3.19)
 
 project(CppPR)
 
-add_executable(cpp_pr)
+list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
-target_sources(
-    cpp_pr
-    PRIVATE
-    "src/main.cpp"
-)
+include(get_cpm)
+
+add_subdirectory("math")
+add_subdirectory("app")
 
