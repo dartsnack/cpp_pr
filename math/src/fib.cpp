@@ -7,7 +7,7 @@ namespace math
 
     int32_t fib(int32_t n)
     {
-	if (n >= fib_cache_size)
+	if (n >= fib_cache_size || n < 0)
 	{
 	    return badfib;
 	}
