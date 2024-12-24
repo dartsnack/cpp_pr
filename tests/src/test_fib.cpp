@@ -22,10 +22,5 @@ TEST_CASE("Fibonacci sequence")
 	REQUIRE(try_10th == 34);
 	REQUIRE(try_24th == 28657);
     }
-
-    SECTION("This section is meant to fail")
-    {
-	REQUIRE(0 == 1);
-    }
 }
 
