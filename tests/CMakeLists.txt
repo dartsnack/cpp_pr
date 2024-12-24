@@ -5,6 +5,7 @@ add_executable(math_tests)
 target_sources(
     math_tests
     PRIVATE
+    "src/test_fact.cpp"
     "src/test_fib.cpp"
 )
 
