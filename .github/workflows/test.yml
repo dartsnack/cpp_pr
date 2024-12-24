@@ -1,0 +1,25 @@
+name: Unit-testing
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -S . -B build -D BUILD_MATH_TESTS=ON -D CMAKE_BUILD_TYPE=Debug
+
+      - name: Build
+        run: cmake --build build --config Debug --parallel
+
+      - name: Test 
+        run: |
+          cd build
+          ctest --build-config Debug --output-on-failure --verbose
+
