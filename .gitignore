@@ -1,0 +1,8 @@
+# CMake
+**/build/**
+**/out/**
+
+# Visual Studio [Code]
+**/.vs/**
+**/.vscode/**
+
