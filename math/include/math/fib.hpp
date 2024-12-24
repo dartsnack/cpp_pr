@@ -5,7 +5,7 @@
 namespace math
 {
     /// The `fib` function failure return value.
-    inline constexpr int32_t badfib = -1;
+    inline constexpr std::int32_t badfib = -1;
 
     /**
      * @brief Calculates the Fibonacci sequence (n-1)`th number.
@@ -20,6 +20,6 @@ namespace math
      * @return The (n-1)'th Fibonacci sequence number.
      * @return `badfib` on failure.
      */
-    int32_t fib(int32_t n);
+    std::int32_t fib(std::int32_t n);
 }
 

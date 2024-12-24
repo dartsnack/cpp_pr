@@ -2,10 +2,10 @@
 
 namespace math
 {
-    static constexpr int32_t fib_cache_size = 47;
-    static int32_t fib_cache[fib_cache_size]{};
+    static constexpr std::int32_t fib_cache_size = 47;
+    static std::int32_t fib_cache[fib_cache_size]{};
 
-    int32_t fib(int32_t n)
+    std::int32_t fib(std::int32_t n)
     {
 	if (n >= fib_cache_size || n < 0)
 	{
