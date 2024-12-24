@@ -6,3 +6,6 @@
 **/.vs/**
 **/.vscode/**
 
+# Clangd
+**/.cache/**
+
