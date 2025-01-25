@@ -3,7 +3,7 @@
 namespace math
 {
     template<typename T>
-    constexpr T pi_constant();
+    constexpr T pi_constant() = delete;
 
     template<>
     constexpr auto pi_constant<float>() -> float
