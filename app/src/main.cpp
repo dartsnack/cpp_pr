@@ -2,10 +2,11 @@
 
 #include <math/fib.hpp>
 #include <math/fact.hpp>
+#include <math/pi_constant.hpp>
 
 int main()
 {
-    std::int32_t v = math::fact(10);
-    std::cout << v << '\n';
+    std::cout << math::pi_constant<float>() << '\n'
+	<< math::pi_constant<double>() << '\n';
 }
 

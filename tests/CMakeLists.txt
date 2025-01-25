@@ -7,6 +7,7 @@ target_sources(
     PRIVATE
     "src/test_fact.cpp"
     "src/test_fib.cpp"
+    "src/test_pi.cpp"
 )
 
 target_link_libraries(
